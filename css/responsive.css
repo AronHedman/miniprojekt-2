@@ -1,0 +1,54 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: minmax(10rem,auto);
+    grid-gap: 1rem;
+  }
+
+main section {
+    grid-column: span 6; /* Default för mobil. Upptar hela bredden. */
+    padding: 0.5rem;
+  }
+  
+.row-2{grid-row: span 2;}
+.row-3{grid-row: span 3;}
+.row-4{grid-row: span 4;}
+.row-5{grid-row: span 5;}
+
+    /*Mobile*/
+.col-t-1 {grid-column: span 1;}
+.col-t-2 {grid-column: span 2;}
+.col-t-3 {grid-column: span 3;}
+.col-t-4 {grid-column: span 4;}
+.col-t-5 {grid-column: span 5;}
+.col-t-6 {grid-column: span 6;}
+
+    /*Tablet*/
+@media (min-width: 768px) {
+    .col-t-1 {grid-column: span 1;}
+    .col-t-2 {grid-column: span 2;}
+    .col-t-3 {grid-column: span 3;}
+    .col-t-4 {grid-column: span 4;}
+    .col-t-5 {grid-column: span 5;}
+    .col-t-6 {grid-column: span 6;}
+}
+
+    /*Tablet*/
+@media (min-width: 980px) {
+    .col-t-1 {grid-column: span 1;}
+    .col-t-2 {grid-column: span 2;}
+    .col-t-3 {grid-column: span 3;}
+    .col-t-4 {grid-column: span 4;}
+    .col-t-5 {grid-column: span 5;}
+    .col-t-6 {grid-column: span 6;}
+}
+
+    /*Tablet*/
+@media (min-width: 1200px) {
+    .col-t-1 {grid-column: span 1;}
+    .col-t-2 {grid-column: span 2;}
+    .col-t-3 {grid-column: span 3;}
+    .col-t-4 {grid-column: span 4;}
+    .col-t-5 {grid-column: span 5;}
+    .col-t-6 {grid-column: span 6;}
+}
