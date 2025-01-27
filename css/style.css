@@ -1,0 +1,125 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import url('https://db.onlinewebfonts.com/c/cdc8c3de1e6bd5a9a67c6a001f9fedd0?family=Burbank+Big+Condensed+Black');
+@import url('https://fonts.cdnfonts.com/css/mantinia');
+@import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    text-decoration: none;
+    color: black;
+    transform-origin: center;
+}
+
+body {
+
+}
+
+#body {
+    overflow-x: scroll;
+}
+
+.indexSection {
+    height: 110vh;
+    width: 100vw;
+    overflow: hidden;    
+    background-color: rgba(124,163,255,255);
+    position: relative;
+}
+
+.backgroundImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#minecraftText, #minecraftText:visited {
+    font-family: 'Minecraft', sans-serif;
+    position: absolute;
+    top: 15vh;
+    left: 40vw;
+    font-size: 15vh;
+    color: rgb(162, 158, 165);
+    transform: rotatex(30deg);
+    text-shadow: 0px 8px 0px rgb(98, 97, 99), 0px 10px 0px rgba(43, 44, 45, 0.8);
+}
+
+#minecraftText:hover, #minecraftText:visited:hover {
+    transition: 200ms;
+    transform: scale(105%);
+}
+
+#fortniteText, #fortniteText:visited {
+    overflow: visible;
+    font-family: "Burbank Big Condensed Black";
+    position: absolute;
+    top: 35vh;
+    left: 45vw;
+    font-size: 18vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    -2px -2px 0px black,
+    2px 2px 0px black,
+    -2px 2px 0px black,
+    2px -2px 0px black;  
+}
+
+#fortniteText:hover, #fortniteText:visited:hover {
+    transition: 150ms;
+    transform: scale(105%);
+}
+
+#tetrisText, #tetrisText:visited {
+    overflow: visible;
+    position: absolute;
+    top: 0%;
+    left: 32%;
+    width: 40%;
+    background-color: rgba(43, 44, 45, 0.8);
+}
+
+#tetrisText img, #tetrisText:visited img {
+    width: 100%;
+} 
+
+#tetrisText:hover, #tetrisText:visited:hover {
+    transition: 150ms;
+    transform: scale(105%);
+}
+
+
+#eldenRingText, #eldenRingText:visited {
+    overflow: visible;
+    font-family: 'Mantinia', sans-serif;
+    position: absolute;
+    top: 15vh;
+    left: 31vw; 
+    color: darkgoldenrod;
+    font-size: 15vh;
+}
+
+#eldenRingText:hover, #eldenRingText:visited:hover {
+    transition: 150ms;
+    transform: scale(105%);
+}
+
+#marioText, #marioText:visited {
+    
+    font-family: 'New Super Mario Font U', sans-serif;
+    position: absolute;
+    font-size: 15vh;
+    top: 22vh;
+    left: 32vw;
+    color: white;    
+}
+
+#marioText:hover, #marioText:visited:hover {
+    transition: 150ms;
+    transform: scale(105%);
+}
