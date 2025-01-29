@@ -1,13 +1,25 @@
 main {
     display: grid;
+    height: auto;
+    min-height: 100vh;
+    gap: 3vmin;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 1rem;
+    grid-template-rows: repeat(15, 16vh);
+    overflow-y: auto;
   }
 
 main section {
     grid-column: span 6;
     padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3vmin;
+    font-size: 3vmin;
+    
   }
   
 .row-2{grid-row: span 2;}
@@ -25,6 +37,8 @@ main section {
 
     /*Tablet*/
 @media (min-width: 768px) {
+    main {grid-template-rows: repeat(8, 16vh);}
+    
     .col-t-1 {grid-column: span 1;}
     .col-t-2 {grid-column: span 2;}
     .col-t-3 {grid-column: span 3;}
@@ -40,7 +54,9 @@ main section {
 }
 
     /*Desktop*/
-@media (min-width: 980px) {
+@media (min-width: 1200px) {
+    main {grid-template-rows: repeat(6, 1fr);}
+
     .col-d-1 {grid-column: span 1;}
     .col-d-2 {grid-column: span 2;}
     .col-d-3 {grid-column: span 3;}
@@ -48,6 +64,7 @@ main section {
     .col-d-5 {grid-column: span 5;}
     .col-d-6 {grid-column: span 6;}
 
+    .row-d-1{grid-row: span 1;}
     .row-d-2{grid-row: span 2;}
     .row-d-3{grid-row: span 3;}
     .row-d-4{grid-row: span 4;}
@@ -56,7 +73,9 @@ main section {
 }
 
     /*Large Desktop*/
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
+    main {grid-template-rows: repeat(4, 1fr);}
+
     .col-l-1 {grid-column: span 1;}
     .col-l-2 {grid-column: span 2;}
     .col-l-3 {grid-column: span 3;}
@@ -64,9 +83,9 @@ main section {
     .col-l-5 {grid-column: span 5;}
     .col-l-6 {grid-column: span 6;}
 
+    .row-l-1{grid-row: span 1;}
     .row-l-2{grid-row: span 2;}
     .row-l-3{grid-row: span 3;}
     .row-l-4{grid-row: span 4;}
     .row-l-5{grid-row: span 5;}
-
 }

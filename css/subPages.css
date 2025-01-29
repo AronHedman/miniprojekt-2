@@ -24,7 +24,6 @@ main section {
 }
 
 .img {
-    background-image: url(../img/minecraft1.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
