@@ -16,10 +16,6 @@
     transform-origin: center;
 }
 
-body {
-
-}
-
 main {
     text-align: center;
 }
@@ -101,7 +97,6 @@ main {
     transition: 150ms;
     transform: scale(105%);
 }
-
 
 #eldenRingText, #eldenRingText:visited {
     overflow: visible;

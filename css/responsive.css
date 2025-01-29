@@ -1,12 +1,12 @@
-main{
+main {
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: minmax(10rem,auto);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 1rem;
   }
 
 main section {
-    grid-column: span 6; /* Default för mobil. Upptar hela bredden. */
+    grid-column: span 6;
     padding: 0.5rem;
   }
   
@@ -16,12 +16,12 @@ main section {
 .row-5{grid-row: span 5;}
 
     /*Mobile*/
-.col-t-1 {grid-column: span 1;}
-.col-t-2 {grid-column: span 2;}
-.col-t-3 {grid-column: span 3;}
-.col-t-4 {grid-column: span 4;}
-.col-t-5 {grid-column: span 5;}
-.col-t-6 {grid-column: span 6;}
+.col-m-1 {grid-column: span 1;}
+.col-m-2 {grid-column: span 2;}
+.col-m-3 {grid-column: span 3;}
+.col-m-4 {grid-column: span 4;}
+.col-m-5 {grid-column: span 5;}
+.col-m-6 {grid-column: span 6;}
 
     /*Tablet*/
 @media (min-width: 768px) {
@@ -31,24 +31,42 @@ main section {
     .col-t-4 {grid-column: span 4;}
     .col-t-5 {grid-column: span 5;}
     .col-t-6 {grid-column: span 6;}
+
+    .row-t-2{grid-row: span 2;}
+    .row-t-3{grid-row: span 3;}
+    .row-t-4{grid-row: span 4;}
+    .row-t-5{grid-row: span 5;}
+
 }
 
-    /*Tablet*/
+    /*Desktop*/
 @media (min-width: 980px) {
-    .col-t-1 {grid-column: span 1;}
-    .col-t-2 {grid-column: span 2;}
-    .col-t-3 {grid-column: span 3;}
-    .col-t-4 {grid-column: span 4;}
-    .col-t-5 {grid-column: span 5;}
-    .col-t-6 {grid-column: span 6;}
+    .col-d-1 {grid-column: span 1;}
+    .col-d-2 {grid-column: span 2;}
+    .col-d-3 {grid-column: span 3;}
+    .col-d-4 {grid-column: span 4;}
+    .col-d-5 {grid-column: span 5;}
+    .col-d-6 {grid-column: span 6;}
+
+    .row-d-2{grid-row: span 2;}
+    .row-d-3{grid-row: span 3;}
+    .row-d-4{grid-row: span 4;}
+    .row-d-5{grid-row: span 5;}
+
 }
 
-    /*Tablet*/
+    /*Large Desktop*/
 @media (min-width: 1200px) {
-    .col-t-1 {grid-column: span 1;}
-    .col-t-2 {grid-column: span 2;}
-    .col-t-3 {grid-column: span 3;}
-    .col-t-4 {grid-column: span 4;}
-    .col-t-5 {grid-column: span 5;}
-    .col-t-6 {grid-column: span 6;}
+    .col-l-1 {grid-column: span 1;}
+    .col-l-2 {grid-column: span 2;}
+    .col-l-3 {grid-column: span 3;}
+    .col-l-4 {grid-column: span 4;}
+    .col-l-5 {grid-column: span 5;}
+    .col-l-6 {grid-column: span 6;}
+
+    .row-l-2{grid-row: span 2;}
+    .row-l-3{grid-row: span 3;}
+    .row-l-4{grid-row: span 4;}
+    .row-l-5{grid-row: span 5;}
+
 }
