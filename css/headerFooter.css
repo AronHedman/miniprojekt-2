@@ -1,20 +1,10 @@
-header {
-
+footer {
+    display: flex;
+    justify-content: end;
 }
 
-#dropdown {
-    padding: 1vh;
-    float: right;
-    overflow:  visible;
-    width: 5vw;
-    height: 5vw;
-}
-
-#dropdownMain {
-    width: 100%;
-}
-
-#dropdownMain:hover {
-    transition: 100ms;
-    transform: scale(110%);
+footer {
+    background-color: rgb(230, 234, 244);
+    padding: 1vmin;
+    font-size: 5vh;
 }
